@@ -1,6 +1,6 @@
 {
   "ids": {
-    "Todo": 6,
+    "Todo": 7,
     "TodoList": 3
   },
   "models": {
@@ -9,10 +9,11 @@
       "2": "{\"title\":\"destroy alderaan\",\"desc\":\"Make sure there are no survivors left!\",\"todoListId\":1,\"id\":2}",
       "3": "{\"title\":\"terrorize senate\",\"desc\":\"Tell them they're getting a budget cut.\",\"todoListId\":2,\"id\":3}",
       "4": "{\"title\":\"crush rebel scum\",\"desc\":\"Every.Last.One.\",\"todoListId\":1,\"id\":4}",
-      "5": "{\"title\":\"Something\",\"desc\":\"Something desc\",\"isComplete\":true,\"id\":5}"
+      "5": "{\"title\":\"Something\",\"desc\":\"Something desc\",\"todoListId\":1,\"id\":5}",
+      "6": "{\"title\":\"string\",\"desc\":\"string\",\"todoListId\":1,\"id\":6}"
     },
     "TodoList": {
-      "1": "{\"title\":\"Sith lord's check list\",\"lastModified\":\"a long time ago\",\"id\":1}",
+      "1": "{\"title\":\"Sith lord's check list\",\"lastModified\":\"2018-07-13\",\"id\":1}",
       "2": "{\"title\":\"daily routine of POTUS\",\"lastModified\":\"2018-07-13\",\"id\":2}"
     }
   }
