@@ -15,20 +15,20 @@ import {
   del,
   requestBody,
 } from '@loopback/rest';
-import {TodoList} from '../models';
-import {TodoListRepository} from '../repositories';
+import { TodoList } from '../models';
+import { TodoListRepository } from '../repositories';
 
 export class TodoListController {
   constructor(
     @repository(TodoListRepository)
-    public todoListRepository : TodoListRepository,
-  ) {}
+    public todoListRepository: TodoListRepository,
+  ) { }
 
   @post('/todo-lists', {
     responses: {
       '200': {
         description: 'TodoList model instance',
-        content: {'application/json': {schema: {'x-ts-type': TodoList}}},
+        content: { 'application/json': { schema: { 'x-ts-type': TodoList } } },
       },
     },
   })
@@ -40,7 +40,7 @@ export class TodoListController {
     responses: {
       '200': {
         description: 'TodoList model count',
-        content: {'application/json': {schema: CountSchema}},
+        content: { 'application/json': { schema: CountSchema } },
       },
     },
   })
@@ -56,7 +56,7 @@ export class TodoListController {
         description: 'Array of TodoList model instances',
         content: {
           'application/json': {
-            schema: {type: 'array', items: {'x-ts-type': TodoList}},
+            schema: { type: 'array', items: { 'x-ts-type': TodoList } },
           },
         },
       },
@@ -72,7 +72,7 @@ export class TodoListController {
     responses: {
       '200': {
         description: 'TodoList PATCH success count',
-        content: {'application/json': {schema: CountSchema}},
+        content: { 'application/json': { schema: CountSchema } },
       },
     },
   })
@@ -87,7 +87,7 @@ export class TodoListController {
     responses: {
       '200': {
         description: 'TodoList model instance',
-        content: {'application/json': {schema: {'x-ts-type': TodoList}}},
+        content: { 'application/json': { schema: { 'x-ts-type': TodoList } } },
       },
     },
   })

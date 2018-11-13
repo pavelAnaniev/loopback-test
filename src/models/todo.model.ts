@@ -26,6 +26,7 @@ export class Todo extends Entity {
 
   @property()
   todoListId: number;
+
   constructor(data?: Partial<Todo>) {
     super(data);
   }
